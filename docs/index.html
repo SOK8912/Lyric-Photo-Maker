@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Lyric Photo Maker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kiwi+Maru&family=Kosugi&family=M+PLUS+Rounded+1c&family=Mochiy+Pop+One&family=Noto+Sans+JP:wght@100..900&family=Sawarabi+Gothic&family=Yusei+Magic&family=Zen+Maru+Gothic&display=swap');
+    </style>
+  <script type="module" crossorigin src="/assets/index-DoxB8TUh.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BtvzKvLr.css">
+</head>
+
+<body>
+    <div id="how-to">
+        <img id="how-to-img-hori" src="/assets/howToHorizontal-DgCIdJvC.png"></img>
+        <img id="how-to-img-ver" src="/assets/howToVertical-ScquKFDv.png"></img>
+        <button id="how-to-close" type="button">閉じる</button>
+    </div>
+    <div id="flex-row">
+        <!-- 撮影範囲 -->
+        <div id="camera">
+            <video id="video"></video>
+            <div id="lyric-text"><p></p></div>
+        </div>
+        <div id="control-panel">
+            <!-- 再生、停止 -->
+            <div id="music-control">
+                <div id="control">
+                    <a href="#" id="play" class="disabled" disabled></a>
+                    <a href="#" id="stop" class="disabled" disabled></a>
+                </div>
+                <!-- アーティストと楽曲の情報 -->
+                <div id="meta">
+                    <div id="artist">artist: <span>-</span></div>
+                    <div id="song">song: <span>-</span></div>
+                </div>
+                <div id="media" hidden></div>
+            </div>
+            <!-- 撮影、カメラ切り替え -->
+            <div id="camera-control">
+                <div id="shooting-button"></div>
+                <div id="camera-reverse-button"></div>
+            </div>
+            <!-- デコレーション操作 -->
+            <div id="decoration-control">
+                <!-- デコレーション追加 -->
+                <div id="decoration-select">
+                    <div id="left-button"></div>
+                    <img id="select-item"></img>
+                    <div id="right-button"></div>
+                </div>
+                <button id="decoration-button" type="button">配置</button>
+                <!-- 歌詞デザイン -->
+                <div id="font-decoration">
+                    <label for="font-select">フォント</label>
+                    <select name="fonts" id="font-select">
+                    <option value=0>Yusei Magic</option>
+                    <option value=1>Noto Sans Japanese</option>
+                    <option value=2>Sawarabi Gothic</option>
+                    <option value=3>Kosugi</option>
+                    <option value=4>M PLUS Rounded 1c</option>
+                    <option value=5>Zen Maru Gothic</option>
+                    <option value=6>Kiwi Maru</option>
+                    <option value=7>Dela Gothic One</option>
+                    <option value=8>Mochiy Pop One</option>
+                    </select>
+                    <label for="font-color">文字色</label>
+                    <select name="font-color" id="font-color">
+                    <option value=0>ブルーグリーン</option>
+                    <option value=1>オレンジ</option>
+                    <option value=2>イエロー</option>
+                    <option value=3>ピンク</option>
+                    <option value=4>レッド</option>
+                    <option value=5>ブルー</option>
+                    </select>
+                    <label for="font-size">フォントサイズ</label>
+                    <select name="font-size" id="font-size">
+                    <option value=0>4</option>
+                    <option value=1>6</option>
+                    <option value=2>8</option>
+                    <option value=3>10</option>
+                    <option value=4>12</option>
+                    </select>
+                    <label for="direction">横書き縦書き</label>
+                    <select name="direction" id="direction">
+                    <option value=0>横</option>
+                    <option value=1>縦</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
